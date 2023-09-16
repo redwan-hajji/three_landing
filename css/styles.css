@@ -947,6 +947,31 @@ color: var(--third_color);
   position: relative;
 }
  /* end login in card */
+/* start button log in style */
+
+/* CSS */
+.log_in_submit{
+
+  width: 50%;
+  background-image: linear-gradient(var(--main_color), var(--secondary_color));
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 8px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-inline: auto;
+}
+
+/* end button log in style */
 /* end landing */
 
 
