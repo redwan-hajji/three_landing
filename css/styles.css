@@ -194,7 +194,7 @@ header .container nav{
  height: 100%;
  display: flex;
  border-bottom-left-radius: 2px;
- z-index: 3;
+ z-index: 11;
 }
 header .container nav ul{
  display: flex;
