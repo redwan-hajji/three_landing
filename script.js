@@ -31,6 +31,11 @@ let inpass_hidden=document.getElementById("icon_hidden");
 
 let user_name=document.getElementById("user_name");
 
+let currentYear = document.querySelector(".year");
+let current_year =new Date()
+current_year=current_year.getFullYear();
+currentYear.innerHTML=current_year;
+
 // start slide_right_function 
 let slide_right_function=function(){
 if(point_one.classList.contains("active")){
