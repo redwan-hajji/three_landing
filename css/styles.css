@@ -976,8 +976,8 @@ color: var(--third_color);
 
 /* start branches */
 .branches .container{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .branches .container .head_text{
   text-align: center;
