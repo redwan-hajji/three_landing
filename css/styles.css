@@ -974,6 +974,140 @@ color: var(--third_color);
 /* end button log in style */
 /* end landing */
 
+/* start branches */
+.branches .container{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.branches .container .head_text{
+  text-align: center;
+  color: var(--main_color);
+  position: relative;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.branches .container .head_text::after{
+  content: "";
+  position: absolute;
+  width: 75%;
+  bottom: -15px;
+  left: 0;
+  height: 2px;
+  background-color: var(--main_color);
+  border-radius: 45px;
+  animation-name: under_line_effect;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes under_line_effect{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(25%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.branches .container .branches_cards{
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 20px ;
+}
+
+@media(max-width: 420px) {
+  .branches .container .branches_cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media(max-width: 350px) {
+  .branches .container .branches_cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+.branches .container .branches_cards .branch{
+  position: relative;
+  padding-block: 10px;
+  padding-inline: 5%;
+  border-radius: 15px;
+  border: 3px solid var(--secondary_color);
+  border-image: linear-gradient(to left, turquoise, greenyellow) 1 0;
+  transition: all 0.3s ease;
+}
+.branches .container .branches_cards .branch img{
+ width: 100% ;
+ border-radius: 20px;
+ transition: all 0.3s ease;
+}
+.branches .container .branches_cards .branch img:hover{
+ transform: scale(1.1);
+}
+.branches .container .branches_cards .branch h2{
+  position: absolute;
+  transform: translateY(-200%);
+  text-align: center;
+  margin-block: 5px;
+  width: 90%;
+  margin-inline: auto;
+  padding-inline: auto;
+  transition: all 0.3s ease;
+  z-index: -1;
+  color:var(--third_color);
+}
+
+.branches .container .branches_cards .branch p{
+  width: 90%;
+  margin-inline: auto;
+  position: absolute;
+  margin-inline: auto;
+  transform: translateY(-200%);
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: -1;
+  padding-bottom: 20px;
+}
+.branches .container .branches_cards .branch a{
+  position: absolute;
+    transform: translateY(-200%);
+    text-align: center;
+    bottom: 15px;
+    margin-block: 5px;
+    margin-inline: auto;
+    padding-inline: auto;
+    transition: all 0.3s ease;
+    z-index: -1;
+    display: none;
+    cursor: pointer;
+    color: var(--main_color);
+}
+.branches .container .branches_cards .branch:hover h2{
+ position: relative;
+ transform: translateY(20px);
+}
+.branches .container .branches_cards .branch:hover p{
+  position: relative;
+  transform: translateY(20px);
+}
+.branches .container .branches_cards .branch:hover a{
+  position: relative;
+  transform: translateY(20px);
+  display: block;
+    cursor: pointer !important;
+    z-index: 2;
+}
+.branches .container .branches_cards .branch a:hover{
+  color: var(--third_color);
+}
+
+/* end branches */
+
+
+
 
 
 
