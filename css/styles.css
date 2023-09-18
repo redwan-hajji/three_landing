@@ -1518,8 +1518,43 @@ box-shadow: rgba(0, 0, 130, 0.4) -5px 5px, rgba(0, 0, 130, 0.3) -10px 10px, rgba
       0,
       130, 0.05) -25px 25px;
 }
+@keyframes shading_shadow{
+  0%{
+box-shadow: rgba(0, 0, 130, 0.4) -5px 5px, rgba(0, 0, 130, 0.3) -10px 10px, rgba(0,
+      0,
+      130, 0.2) -15px 15px, rgba(0,
+      0,
+      130, 0.1) -20px 20px, rgba(0,
+      0,
+      130, 0.05) -25px 25px;
+  }
+  20%{
+box-shadow: rgba(0, 0, 130, 0.4) -5px 5px, rgba(0, 0, 130, 0.3) -10px 10px, rgba(0,
+      0,
+      130, 0.2) -15px 15px, rgba(0,
+      0,
+      130, 0.1) -20px 20px;
+  }
+40%{
+box-shadow: rgba(0, 0, 130, 0.4) -5px 5px, rgba(0, 0, 130, 0.3) -10px 10px, rgba(0,
+      0,
+      130, 0.2) -15px 15px;
+}
+60%{
+box-shadow: rgba(0, 0, 130, 0.4) -5px 5px, rgba(0, 0, 130, 0.3) -10px 10px;
+}
+80%{
+box-shadow: rgba(0, 0, 130, 0.4) -5px 5px;
+}
+100%{
+box-shadow: black  -3px 3px;
+}
+}
 .services .container .grid-services .grid:hover{
   transform: scale(1.04);
+  animation-name: shading_shadow;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }
 
 .services .container .grid-services h2{
