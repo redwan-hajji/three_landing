@@ -441,7 +441,7 @@ overflow-y: hidden;
   width: 40%;
   height: 33%;
   z-index: 2;
-  background-image: url(../images/black_screen.png);
+  background-image: url(/images/black_screen.png);
   background-size: cover;
   animation-name: screen;
   animation-duration: 10s;
@@ -716,7 +716,7 @@ background-image: url(../images/20feet_screen-removebg-preview.png);
 
 }
 .landing .cards .good_pic.two {
-background-image: url(../images/amazon_screen-removebg-preview.png);
+background-image: url(../../images/amazon_screen-removebg-preview.png);
 
 }
 .landing .cards .good_pic.three {
@@ -1135,7 +1135,7 @@ height: 38svh;
 }
 }
 @media(max-width:395px) {
-  .socials_section {
+.socials_section {
     height: 70svh;
   }
 }
@@ -1271,7 +1271,6 @@ justify-content: center;
   color: var(--main_color);
 }
 /* end footer */
-
 /* ------------------------------ services ----------------------------------- */
 .landing_services{
   background-image: url(../images/services.jpg);
@@ -1593,9 +1592,128 @@ box-shadow: black  -3px 3px;
 }
 /* end services */
 
+/* -------------------------------- start contact ------------------------------- */
+.contact {
+height:fit-content;
+padding-bottom: 23.5px;
+padding-top: 23.5px;
+}
+
+.contact .container {
+  position: relative;
+  flex-direction: row;
+  flex: 0;
+}
+
+.contact .container .head-text h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--main_color);
+  position: relative;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.contact .container .head-text h1::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  bottom: -15px;
+  left: 0;
+  height: 2px;
+  background-color: var(--main_color);
+  border-radius: 45px;
+  animation-name: under_line_effect;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
 
 
+.contact .container .contact-space {
+  display: flex;
+}
 
+.contact .container .contact-space .left {
+  margin-right: 25px;
+  flex: 2;
+}
 
+.contact .container .contact-space .left a {
+  cursor: pointer;
+}
 
+.contact .container .contact-space .right {
+  flex: 1;
+}
+
+.contact .container .contact-space .left form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (max-width:776px) {
+  .contact .container .contact-space {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .contact .container .contact-space .right {
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 25px !important;
+  }
+
+  .contact .container .contact-space .right p:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+.contact .container .contact-space .left form input,
+.contact .container .contact-space .left form textarea {
+  border: 1px solid var(--main_color);
+  padding: 20px;
+  color: var(--main_color) !important;
+}
+
+.contact .container .contact-space .left form input {
+  height: 50px;
+}
+
+.contact .container .contact-space .left .send_message {
+  padding: 20px 15px;
+  margin-top: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: var(--main_color);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.contact .container .contact-space .right {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
+  justify-content: space-between;
+}
+
+.contact .container .contact-space .right h3 {
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: var(--main_color);
+}
+
+.contact .container .contact-space .right p {
+  margin-bottom: 5px;
+  color: black !important;
+}
+
+/* ----------------------------------- end contact -------------------------------------- */
 
