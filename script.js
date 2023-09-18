@@ -35,7 +35,6 @@ let currentYear = document.querySelector(".year");
 let current_year =new Date()
 current_year=current_year.getFullYear();
 currentYear.innerHTML=current_year;
-
 // start slide_right_function 
 let slide_right_function=function(){
 if(point_one.classList.contains("active")){
@@ -281,7 +280,7 @@ left_btn.addEventListener("click",slide_left_function);
 
 
 // start right button
-right_btn.addEventListener("click",slide_right_function)
+right_btn.addEventListener("click",slide_right_function);
 // end right button
 
 
@@ -413,7 +412,6 @@ inpass.onclick=function(){
 // end passowrd management
 // landing.addEventListener("mousewheel",slide_left_function);
 // landing.addEventListener("DOMMouseScroll",slide_right_function);
-console.log(passowrd);
 // landing.addEventListener("click",function(){
 // if(passowrd === document.activeElement){
 //   clearInterval(three_landing_slide); 
@@ -452,3 +450,4 @@ else {three_landing_slide =setInterval(slide_right_function,7000);} })
 landing.addEventListener("click",checkfocus);
 landing.addEventListener("click",checkfocus_user_name);
 // landing.addEventListener("click",hover_card_login);
+
