@@ -1130,12 +1130,12 @@ position: relative;
 height: 38svh;
 }
 @media(max-width:708px){
-.socials {
+.socials_section {
   height: 60svh;
 }
 }
 @media(max-width:395px) {
-  .socials {
+  .socials_section {
     height: 70svh;
   }
 }
