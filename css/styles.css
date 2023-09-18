@@ -441,7 +441,7 @@ overflow-y: hidden;
   width: 40%;
   height: 33%;
   z-index: 2;
-  background-image: url(/images/black_screen.png);
+  background-image: url(../images/black_screen.png);
   background-size: cover;
   animation-name: screen;
   animation-duration: 10s;
@@ -716,7 +716,7 @@ background-image: url(../images/20feet_screen-removebg-preview.png);
 
 }
 .landing .cards .good_pic.two {
-background-image: url(../../images/amazon_screen-removebg-preview.png);
+background-image: url(../images/amazon_screen-removebg-preview.png);
 
 }
 .landing .cards .good_pic.three {
