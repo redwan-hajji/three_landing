@@ -1756,6 +1756,12 @@ background-color: #21D4FD;
   background-image: linear-gradient(90deg, #21D4FD 0%, #2137ff 100%);
   grid-area: middle_left;
 }
+@media (max-width:560px){
+.about_us_section .middle_left{
+ 1.5em;
+} 
+}
+
 .about_us_section .middle_left h1{
   transform: rotate(-90deg);
 }
