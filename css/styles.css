@@ -1717,3 +1717,239 @@ padding-top: 23.5px;
 
 /* ----------------------------------- end contact -------------------------------------- */
 
+/* start about us section */
+
+.about_us_section{
+  height: calc(100svh - 60px);
+    display: grid;
+  grid-template-areas: 
+  "top_left top_left top_right top_right"
+  "middle_left middle_middle middle_middle middle_right"
+  "bottom_left bottom_left bottom_right bottom_right";
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.about_us_section  .top_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 1.3;
+    text-align: center;
+    color: whitesmoke;
+
+background-color: #0093E9;
+  background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+  grid-area: top_left;
+}
+.about_us_section .top_right {
+  position: relative;
+  grid-area: top_right;
+}
+.about_us_section .middle_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: #21D4FD;
+  background-image: linear-gradient(90deg, #21D4FD 0%, #2137ff 100%);
+  grid-area: middle_left;
+}
+.about_us_section .middle_left h1{
+  transform: rotate(-90deg);
+}
+.about_us_section .middle_middle {
+  grid-area: middle_middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10%;
+
+}
+
+.about_us_section .middle_right {
+  grid-area: middle_right;
+background-color: #21D4FD;
+  background-image: linear-gradient(270deg, #21D4FD 0%, #2137ff 100%);
+}
+.about_us_section .bottom_left {
+  grid-area: bottom_left;
+  overflow: hidden;
+  position: relative;
+}
+.about_us_section .bottom_right{
+  grid-area:bottom_right;
+
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+padding-inline: 10%;
+        line-height: 1.3;
+        text-align: center;
+        color: whitesmoke;
+
+background-color: #0093E9;
+  background-image: linear-gradient(315deg, #0093E9 0%, #80D0C7 100%);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+
+
+
+.area {
+  background: var(--main_color);
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+
+}
+
+.bottom_left .circles li{
+  animation: animate_up 25s linear infinite;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 40px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 10px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 10px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 30px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 10px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 55px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 75px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 12.5px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 7.5px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 75px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+}
+
+@keyframes animate_up {
+
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+      border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+
+    opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+
+/* ---------------------- end about us section -------------------- */
+
