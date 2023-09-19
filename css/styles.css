@@ -1978,4 +1978,18 @@ body {
   .middle_left{
     font-size: 7px !important;
   }
+  .bottom_right {
+    font-size: 7px !important;
+  }
+}
+@media (max-width:300px) {
+  .top_left {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width:300px) {
+  .middle_middle {
+    font-size: 12px !important;
+  }
 }
