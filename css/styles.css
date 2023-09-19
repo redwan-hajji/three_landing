@@ -1726,7 +1726,7 @@ padding-top: 23.5px;
   "top_left top_left top_right top_right"
   "middle_left middle_middle middle_middle middle_right"
   "bottom_left bottom_left bottom_right bottom_right";
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 2fr 1fr ;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .about_us_section  .top_left{
@@ -1756,12 +1756,6 @@ background-color: #21D4FD;
   background-image: linear-gradient(90deg, #21D4FD 0%, #2137ff 100%);
   grid-area: middle_left;
 }
-@media (max-width:560px){
-.about_us_section .middle_left{
- 1.5em;
-} 
-}
-
 .about_us_section .middle_left h1{
   transform: rotate(-90deg);
 }
@@ -1770,7 +1764,8 @@ background-color: #21D4FD;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 10%;
+  padding: 10%;
+  font-size: 20px;
 
 }
 
@@ -1791,7 +1786,7 @@ background-color: #21D4FD;
         align-items: center;
         justify-content: center;
         font-size: 25px;
-padding-inline: 10%;
+padding: 10%;
         line-height: 1.3;
         text-align: center;
         color: whitesmoke;
@@ -1802,7 +1797,6 @@ background-color: #0093E9;
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 
 body {
@@ -1958,4 +1952,30 @@ body {
 }
 
 /* ---------------------- end about us section -------------------- */
+@media (max-width:585px){
+.bottom_right{
+  font-size: 9px;
+}
+}
+@media (max-width:585px) {
+.top_left{
+      font-size: 15px !important;
+}}
+@media (max-width:585px) {
+.middle_middle{
+  font-size: 15px !important;
+}}
+@media (max-width:585px) {
+    .middle_left {
+      font-size: 9px !important;
+    }
+  .bottom_right{
+    font-size: 15px !important;
+  }
+  }
 
+@media (max-width:300px) {
+  .middle_left{
+    font-size: 7px !important;
+  }
+}
